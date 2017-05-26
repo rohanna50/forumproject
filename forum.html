@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>paleenfixesscreens (TM)</title>
+    <style>
+      body{
+         background-color:gray;
+      }
+      p{
+        font-family:"Comic Sans MS", cursive, sans-serif;
+        color:black;
+      }
+      input[type=hidden], select{
+        width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+      }
+      table{
+        border: 1px solid black;
+        color:white;
+        font-family:"Comic Sans MS", cursive, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Welcome to the forum, MYUSERNAME!!</p>
+    <hr>
+    <table border="1">
+      <col style="width:10%">
+      <col style="width:40%">
+      
+      Here are all of the categories!
+      <!-- display categories, currently displaying replies now. -->
+      TOPICHERE
+    </table>
+    <hr>
+    <form method="post">
+      <body>Add a new category below..</body><br>
+      <textarea rows="1" cols="50" name = "title" placeholder="Title"></textarea><br>
+      <textarea rows="4" cols="50" name = "description" placeholder="Description"></textarea>
+      <button type="submit">Add Category</button>
+    </form>
+    <hr>
+    <form method="post">
+      <input type="hidden" name="logout" value="true"/>
+      <button type="submit">Logout</button>
+    </form>
+    
+  </body>
+</html>

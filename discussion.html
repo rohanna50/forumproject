@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Discussion</title>
+  </head>
+    <script>
+      function myFunction() {
+	      var x = document.URL;
+        document.body.innerHTML = document.body.innerHTML.replace('hello', x);
+      }
+    </script>
+    <style>
+      body{
+         background-color:gray;
+      }
+      p{
+        font-family:"Comic Sans MS", cursive, sans-serif;
+        color:black;
+      }
+      input[type=hidden], select{
+        width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+      }
+      table{
+        border: 1px solid black;
+        color:white;
+        font-family:"Comic Sans MS", cursive, sans-serif;
+      }
+    </style>
+  <body onload = "myFunction()">
+    <p>Welcome to the discussion, MYUSERNAME!!</p>
+    <hr>
+    <table border="1">
+      <col style="width:10%">
+      <col style="width:40%">
+    hello
+    <!-- display selected topic above the replies-->
+    REPLYHERE
+    <!-- use php to filter replies-->
+    </table>
+    <hr>
+    <!--Only need replies in this one-->
+    <form action="index.php" method="post">
+      <body>Reply below...</body><br>
+      <textarea rows="4" cols="50" name = "reply" placeholder="Reply"></textarea>
+      <button >Send</button>
+    </form>
+    
+    <hr>
+    <form action="index.php" method="post">
+      <input type="hidden" name="logout" value="true"/>
+      <button type="submit">Logout</button>
+    </form>
+    
+  </body>
+</html>

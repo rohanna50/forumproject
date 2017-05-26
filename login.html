@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- THIS FILE IS DONE... --> 
+
+<html>
+  <head>
+    <title>Login Please</title>
+    <style>
+      h1{
+        font-family:"Comic Sans MS", cursive, sans-serif;
+        margin:0;
+        background-color:#002699;
+        color:white;
+      }
+      body{
+        background-color:#002699;
+        
+      }
+      p{
+        font-family:"Comic Sans MS", cursive, sans-serif;
+        color:white;
+      }
+      button {
+    background-color:#99ffeb;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+     }
+     form {
+       margin:20;
+     }
+     input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+     }
+     input[type=password], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+     }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Forum! <br /> Please login or register an account below...</h1>
+    <!-- MESSAGEHERE -->
+    <hr>
+    <p>If you already have an account, login here: </p>
+    <form method="post">
+      <input type="text" name="username" placeholder="username"></input>
+      <input type="password" name="password" placeholder="password"></input>
+      <input type="hidden" name="login" value="login">
+      <button type="submit">Login</button>
+    </form>
+    <hr>
+    <p>If you don't have an account, register one here: </p>
+    <form action="index.php" method="post">
+      <input type="text" name="username" placeholder="username"></input>
+      <input type="password" name="password" placeholder="password"></input>
+      <input type="hidden" name="register" value="register">
+      <button type="submit">Register</button>
+    </form>  
+  </body>
+</html>

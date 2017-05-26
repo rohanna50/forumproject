@@ -1,0 +1,13 @@
+Create tables used for our database: @forum.db
+
+Create table user(userid int primary_key, username text, password text )
+Create table topics(topicid int primary_key, title text, titdesciption text )
+Create table reply(replyid int primary_key, content TEXT, topicid int (foreign key))
+
+- bind params to prevent sql injections (was too lazy to do) 
+
+3(?????) html files and a index.php to navigate through them
+- login.html (done)
+- topics.html
+- reply.html (when they click the topic from the topics list, display that topic with replies.. should be simple html)
+
